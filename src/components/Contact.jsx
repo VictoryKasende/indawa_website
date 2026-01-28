@@ -130,7 +130,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-sm text-indawa-dark/60">Email</div>
-                  <a href="mailto:contact@indawa.com" className="font-semibold text-indawa-dark hover:text-indawa-violet transition-colors">contact@indawa.com</a>
+                  <a href="mailto:contact.indawa@gmail.com" className="font-semibold text-indawa-dark hover:text-indawa-violet transition-colors">contact.indawa@gmail.com</a>
                 </div>
               </div>
             </div>
