@@ -55,7 +55,7 @@ const Hero = () => {
               </a>
               <a
                 href="#contact"
-                className="border-2 border-indawa-violet text-indawa-violet hover:bg-indawa-violet hover:text-white px-5 py-3 rounded-full font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center gap-2"
+                className="border-2 border-indawa-violet text-indawa-violet hover:bg-indawa-violet hover:text-white px-3 py-3 rounded-full font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center gap-2"
               >
                 Rejoindre la communauté
               </a>
