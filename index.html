@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="INdawa - Apprendre à entreprendre. Découvrez nos solutions pour développer vos compétences entrepreneuriales." />
+    <title>INdawa - Apprendre à entreprendre</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'indawa-dark': '#291549',
+              'indawa-violet': '#5b0cc1',
+              'indawa-cyan': '#49cfd6',
+              'indawa-light': '#ebebeb',
+            },
+            fontFamily: {
+              'myriad': ['Myriad Variable Concept', 'Myriad Pro', 'Arial', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    
+    <!-- Google Fonts fallback -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+      
+      * {
+        font-family: 'Myriad Variable Concept', 'Myriad Pro', Arial, 'Nunito Sans', sans-serif;
+      }
+      
+      /* Wave background pattern */
+      .wave-bg {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23291549' fill-opacity='0.03' d='M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+      }
+      
+      .gradient-text {
+        background: linear-gradient(135deg, #5b0cc1 0%, #49cfd6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .gradient-bg {
+        background: linear-gradient(135deg, #5b0cc1 0%, #49cfd6 100%);
+      }
+      
+      .card-shadow {
+        box-shadow: 0 4px 20px rgba(41, 21, 73, 0.1);
+      }
+      
+      /* Smooth scroll */
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      /* Advanced animations */
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+      }
+      
+      @keyframes pulse-slow {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+      }
+      
+      @keyframes slide-in-right {
+        from { transform: translateX(100px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      
+      @keyframes slide-in-left {
+        from { transform: translateX(-100px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      
+      @keyframes fade-in-up {
+        from { transform: translateY(30px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+      
+      @keyframes rotate-slow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      
+      .float-animation {
+        animation: float 6s ease-in-out infinite;
+      }
+      
+      .pulse-slow {
+        animation: pulse-slow 3s ease-in-out infinite;
+      }
+      
+      .slide-in-right {
+        animation: slide-in-right 0.8s ease-out;
+      }
+      
+      .slide-in-left {
+        animation: slide-in-left 0.8s ease-out;
+      }
+      
+      .fade-in-up {
+        animation: fade-in-up 0.6s ease-out;
+      }
+      
+      .rotate-slow {
+        animation: rotate-slow 20s linear infinite;
+      }
+      
+      /* Glass morphism */
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      
+      /* Neon glow */
+      .neon-glow {
+        box-shadow: 0 0 20px rgba(91, 12, 193, 0.5),
+                    0 0 40px rgba(73, 207, 214, 0.3);
+      }
+      
+      /* 3D card effect */
+      .card-3d {
+        transform-style: preserve-3d;
+        transition: transform 0.6s;
+      }
+      
+      .card-3d:hover {
+        transform: rotateY(10deg) rotateX(5deg);
+      }
+      
+      /* Gradient border */
+      .gradient-border {
+        position: relative;
+        background: white;
+      }
+      
+      .gradient-border::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        padding: 2px;
+        background: linear-gradient(135deg, #5b0cc1, #49cfd6);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+      }
+      
+      /* Parallax */
+      .parallax {
+        transform: translateZ(0);
+        will-change: transform;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
