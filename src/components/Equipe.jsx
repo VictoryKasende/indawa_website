@@ -39,7 +39,7 @@ const Equipe = () => {
   ]
 
   return (
-    <section id="equipe" className="py-24 bg-indawa-light/30 relative overflow-hidden">
+    <section id="equipe" className="py-20 bg-indawa-light/30 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full">
         <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">

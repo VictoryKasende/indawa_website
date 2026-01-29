@@ -67,7 +67,7 @@ const Thematiques = () => {
   ]
   
   return (
-    <section id="thematiques" className="py-2  bg-white relative overflow-hidden">
+    <section id="thematiques" className="py-20  bg-white relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-indawa-violet/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-indawa-cyan/5 rounded-full blur-3xl"></div>

@@ -42,7 +42,7 @@ const About = () => {
   ]
 
   return (
-    <section id="vision" className="py-2 relative overflow-hidden">
+    <section id="vision" className="py-20 relative overflow-hidden">
       {/* Background with animated gradients */}
       <div className="absolute inset-0 bg-gradient-to-b from-white via-indawa-light/30 to-white"></div>
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-indawa-violet/5 rounded-full blur-3xl float-animation"></div>
